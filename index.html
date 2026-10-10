@@ -1,0 +1,155 @@
+---
+layout: default
+title: AustMS 2025
+description: The home page for the 69th Annual Meeting of the Australian Mathematical Society, 2025. Hosted at La Trobe University, Bundoora.
+permalink: /
+page_class: homepage small-h1
+---
+<section>
+	{% include scam-warning.html id="home" %}
+	<h1>The 69th Annual Meeting of the Australian Mathematical Society</h1>
+	<nav class="link-buttons" aria-label="Conference resources">
+		<a href="{{ '/photos' | relative_url }}" class="action-button link-button"><i class="fa-solid fa-camera"></i> Conference photos</a>
+		<a href="{{ '/announcements' | relative_url }}" class="action-button link-button"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
+		<a href="{{ '/assets/files/AustMS2025 conference booklet.pdf' | relative_url }}" class="action-button link-button"><i class="fa-solid fa-download"></i> Download the program and abstracts booklet</a>
+		<a href="{{ '/session-timetable-viewer' | relative_url }}" class="action-button link-button"><i class="fa-solid fa-rectangle-list"></i> Session timetable viewer</a>
+		<a href="{{ '/information-for-speakers' | relative_url }}" class="action-button link-button"><i class="fa-solid fa-person-chalkboard"></i> Information for speakers</a>
+		<a href="{{ '/information-for-attendees' | relative_url }}" class="action-button link-button"><i class="fa-solid fa-people-group"></i> Information for attendees</a>
+	</nav>
+
+	<div class="two-columns">
+		<div>
+			<div class="info-section">
+				<div class="info-box">
+					<div class="info-box-icon"><i class="fa-solid fa-location-dot"></i></div>
+					<div class="pars">
+						<p>La Trobe University, Bundoora campus</p>
+					</div>
+				</div>
+				<div class="info-box">
+					<div class="info-box-icon"><i class="fa-solid fa-calendar-day"></i></div>
+					<div class="pars">
+						<p>December 9–12, 2025</p>
+					</div>
+				</div>
+			</div>
+			<p>Remember to visit our <a href="{{ '/art-exhibition' | relative_url }}">Exhibition of Mathematical Art</a>!</p>
+			<section>
+				<h2>Quick links</h2>
+				<div class="quicklink-grid">
+					<a class="action-button tile-button quicklink" href="{{ '/campus-map' | relative_url }}">
+						<div class="quicklink-icon"><i class="fa-solid fa-route"></i></div>
+						<span>Campus map</span>
+					</a>
+					<button class="action-button tile-button quicklink" type="button" data-dialog-open="wifiDialog">
+						<div class="quicklink-icon"><i class="fa-solid fa-wifi"></i></div>
+						<span>Wi-Fi</span>
+					</button>
+					<a class="action-button tile-button quicklink" href="{{ '/schedule' | relative_url }}">
+						<div class="quicklink-icon"><i class="fa-regular fa-calendar-days"></i></div>
+						<span>Schedule</span>
+					</a>
+					<a class="action-button tile-button quicklink" href="{{ '/registration' | relative_url }}">
+						<div class="quicklink-icon"><i class="fa-regular fa-address-card"></i></div>
+						<span>Registration</span>
+					</a>
+					<button class="action-button tile-button quicklink" type="button" data-dialog-open="contactsDialog">
+						<div class="quicklink-icon"><i class="fa-solid fa-circle-question"></i></div>
+						<span>Contacts</span>
+					</button>
+					<a class="action-button tile-button quicklink" href="{{ '/events' | relative_url }}">
+						<div class="quicklink-icon"><i class="fa-solid fa-utensils"></i></div>
+						<span>Events</span>
+					</a>
+					<a class="action-button tile-button quicklink" href="{{ '/satellites' | relative_url }}">
+						<div class="quicklink-icon"><i class="fa-solid fa-satellite"></i></div>
+						<span>Satellite conferences</span>
+					</a>
+				</div>
+			</section>
+		</div>
+
+		<div class="campus-picture">
+			<img src="{{ '/assets/images/campus-picture.jpg' | relative_url }}"
+				 alt="La Trobe University Bundoora campus">
+		</div>
+	</div>
+</section>
+
+<section>
+	<h2>AustMS 2025 is sponsored by</h2>
+	<div class="sponsor-grid">
+		<div class="sponsor">
+			<a class="logo-link" href="https://www.latrobe.edu.au" target="_blank">
+				<img src="{{ '/assets/images/ltu-sponsor.png' | relative_url }}" width="356" alt="La Trobe University" loading="lazy">
+			</a>
+		</div>
+		<div class="sponsor">
+			<a class="logo-link" href="https://austms.org.au/" target="_blank">
+				<img src="{{ '/assets/images/austms-sponsor.png' | relative_url }}" width="356" alt="AustMS" loading="lazy">
+			</a>
+		</div>
+		<div class="sponsor">
+			<a class="logo-link" href="https://mathematical-research-institute.sydney.edu.au" target="_blank">
+				<img src="{{ '/assets/images/sydney-mri-sponsor.png' | relative_url }}" width="356" alt="The University of Sydney - Mathematical Research Institute" loading="lazy">
+			</a>
+		</div>
+		<div class="sponsor">
+			<a class="logo-link" href="https://www.unimelb.edu.au" target="_blank">
+				<img src="{{ '/assets/images/melbourne-uni-sponsor.png' | relative_url }}" width="356" alt="The University of Melbourne" loading="lazy">
+			</a>
+		</div>
+		<div class="sponsor">
+			<a class="logo-link" href="https://www.unsw.edu.au/science/our-schools/maths" target="_blank">
+				<img src="{{ '/assets/images/unsw-sponsor.svg' | relative_url }}" width="348" alt="UNSW Sydney - School of Mathematics and Statistics" loading="lazy">
+			</a>
+			<span class="sponsor-marker">*</span>
+		</div>
+		<div class="sponsor">
+			<a class="logo-link" href="https://www.monash.edu/science/schools/school-of-mathematics" target="_blank">
+				<img src="{{ '/assets/images/monash-sponsor.svg' | relative_url }}" width="356" alt="Monash University" loading="lazy">
+			</a>
+		</div>
+	</div>
+	<div class="sponsor-footnote">
+		<p>Special thanks to <a href="https://research-repository.uwa.edu.au/en/persons/enrico-valdinoci" target="_blank">Professor Enrico Valdinoci</a> for sponsoring the WIMSIG event.</p>
+		<p>* UNSW support has been provided by <a href="https://www.unsw.edu.au/research/dynamicdata/laureate-team" target="_blank">Professor Gary Froyland, ARC Laureate Centre for Dynamical Systems and Data</a>.</p>
+	</div>
+</section>
+<section>
+	<h2>Indigenous Acknowledgement</h2>
+	<p>La Trobe University proudly acknowledges the traditional custodians of the lands where its campuses are located in Victoria. We recognise that Indigenous Australians have an ongoing connection to the land and the University values their unique contribution to both the University and the wider Australian society. <a href="https://www.latrobe.edu.au/about/acknowledgement" target="_blank">Find out more</a>.</p>
+</section>
+
+{% include dialog.html
+    id="wifiDialog"
+    title="Wi-Fi"
+    content='<p>
+        You will be able to use eduroam to access Wi-Fi at La Trobe.
+        If your eduroam account is not working, please contact your
+        institution&#39;s IT support for assistance.
+    </p>
+
+    <p>
+        If you do not have eduroam credentials (or are having difficulties
+        connecting to the eduroam network) you can use the guest WiFi network
+        with the following credentials:
+    </p>
+
+    <ul class="austms-list">
+        <li><strong>Network</strong>: LTUGuest</li>
+        <li><strong>Username</strong>: austms2025</li>
+        <li><strong>Password</strong>: E5KedD6n</li>
+    </ul>'
+%}
+
+{% include dialog.html
+    id="contactsDialog"
+    title="Contact information"
+	content='<ul class="austms-list">
+		<li>Special sessions (general): <a href="mailto:A.Olenko@latrobe.edu.au" title="">Andriy Olenko</a></li>
+		<li>Special sessions (specific): contact the session organisers</li>
+		<li>IT and web support: <a href="mailto:chris.taylor@latrobe.edu.au" title="">Chris Taylor</a></li>
+		<li>All other enquiries: <a href="mailto:Y.Nikolayevsky@latrobe.edu.au" title="">Yuri Nikolayevski</a></li>
+	</ul>'
+%}

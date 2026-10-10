@@ -1,0 +1,167 @@
+- speaker: John Bamberg
+  url: "https://johnbamberg.github.io/"
+  title: "Finite generalised polygons: the final frontier in the classification of spherical buildings"
+  affiliation: University of Western Australia
+  abstract: 
+    - >
+      A building is a geometric object, introduced by Jacques Tits, in order to give a unified description of some simple groups of Lie type.
+      In 1973, Tits produced a classification of the finite irreducible spherical buildings having rank at least 3.
+      The finite generalised polygons are the rank 2 irreducible spherical buildings, and include projective planes and the generalised quadrangles, hexagons, and octagons.
+      Whilst many examples are known, we lack a classification.
+      Since the early work of Ostrom and Wagner on the automorphism groups of finite projective planes, there has been great interest in what the automorphism groups of generalised polygons can be, and in particular, whether it is possible to classify generalised polygons with a prescribed symmetry condition.
+      In this talk, we give an overview of the study of symmetric finite generalised polygons.
+  image: "/assets/images/plenaries/john-bamberg.jpg"
+  image_position: "center top"
+
+
+
+- speaker: Agnese Barbensi
+  url: "https://sites.google.com/view/agnesebarbensi/home"
+  affiliation: University of Queensland
+  title: "Mapping the topology of polymer folding: knots, geometry, and data"
+  abstract: 
+    - >
+      The last few decades have seen important advances in understanding the consequences of topological constraints in many biological systems.
+      One striking example is the role of knots in biopolymers, which can profoundly influence their folding pathways, structural stability, and functional mechanisms.
+      In this talk, I will explore a range of techniques from computational and applied topology, interpreted broadly, to investigate these phenomena, with a focus on how topological methods provide novel perspectives and tools for analysing the complex behaviour of biopolymers.
+  image_position: "left center"
+      
+  image: "/assets/images/plenaries/agnese-barbensi.jpg"
+
+- speaker: Tobin Driscoll
+  url: "https://www.udel.edu/academics/colleges/cas/units/departments/mathematical-sciences/our-people/tobin-driscoll/"
+  addition: Public and plenary lecturer
+  affiliation: University of Delaware, USA
+  title: Computational approximation by rational functions
+  abstract: 
+    - >
+      Approximation is a cornerstone of numerical computation.
+      Both the theory and practice of approximation by polynomials, trigonometric functions, and other analytic bases are highly developed.
+      While the theory of approximation by rational functions is equally rich, applications of rational functions in computational practice have lagged, despite their potential for greater efficiency for many functions of interest.
+      Interest has grown rapidly within the last decade, however, and there are now multiple algorithms and software packages that make fast rational approximation routine.
+      This talk will focus on the use of Thiele continued fractions, which are the fastest stable option currently known, by introducing how they are implemented, what is known about their convergence, and their application to problems such as sign functions and differential equations.
+  image_position: "center top"
+ 
+  image: "/assets/images/plenaries/tobin-driscoll.jpg"
+
+- speaker: Jared Field 
+  url: "https://www.researchgate.net/scientific-contributions/Jared-M-Field-2116146647"
+  addition: Dr Yunupingu lecturer
+  affiliation: University of Technology Sydney
+  title: Introduction to Mathematical Kinship
+  abstract:
+    - >
+      Indigenous kinship systems throughout the continent have a unique structure whereby descent is, in some sense, reckoned through cycles.
+      For this reason, they have been studied since at least the mid 1800s, with varying degrees of success.
+      It wasn’t, however, until 1949 that Weil (of the Bourbaki set) began in earnest to study these systems mathematically, taking a group theoretic approach.
+      In this talk, I will take a more probabilistic route and derive the average relatedness of permitted couples under Gamilaraay kinship.
+      In doing so, I will show how such kinship systems cleverly reduce the incidence of recessive diseases.
+      I will also touch on the less mathematical but equally important sociological consequences of these structures.
+  image_position: "50% 20%"
+  image: "/assets/images/plenaries/jared-field.jpg"
+
+
+- speaker: Cecilia Gonzalez Tokman 
+  url: "https://people.smp.uq.edu.au/CeciliaTokman/"
+  addition: ANZIAM Lecturer
+  affiliation: University of Queensland
+  title: A journey through random dynamical systems and multiplicative ergodic theory
+  abstract:
+    - >
+      Random dynamical systems serve as versatile mathematical models for analysing systems influenced by external factors, such as seasonal variations and stochastic noise.
+      Recent advancements in multiplicative ergodic theory have uncovered fundamental insights into transport phenomena within these systems, shedding light on their long-term behaviour, mixing rates, coherent structures, and limit theorems.
+      In this talk, we will journey through random dynamical systems and multiplicative ergodic theory, beginning with fundamental examples and addressing questions arising from the study of oceanic and atmospheric flows.
+  image_position: "65% 50%"
+  image: "/assets/images/plenaries/cecilia-gonzalez-tokman.png"
+
+
+
+- speaker: Sophie Hautphenne
+  url: "http://www.sophiehautphenne.info/"
+  affiliation: University of Melbourne
+  title: "Branching processes in practice: models, inference, and applications"
+  abstract:
+    - >
+      Branching processes are natural and versatile tools for describing the dynamics of populations that evolve randomly over time.
+      However, classical branching processes often make restrictive assumptions that limit their usefulness in applications. 
+      In this talk I will present two families of branching processes which extend the classical framework while retaining mathematical tractability: Markovian binary trees, which can capture general lifetime and reproduction patterns, and population-size-dependent branching processes, which can capture competition for limited resources.
+    - >
+      I will describe recent progress on fitting these models to data and present real-world applications, including the endangered Chatham Island black robin, demographic studies of female reproduction, phylogenetics, and the progression of chronic myeloid leukemia.
+      These examples illustrate how stochastic models can inform biology and medicine, and how realistic branching processes open new directions for both theory and applications.
+  image: "/assets/images/plenaries/sophie-hautphenne.jpg"
+
+
+
+- speaker: Theo Johnson-Freyd 
+  url: "https://categorified.net/"
+  addition: ANZAMP lecturer
+  affiliation: Dalhousie University / Perimeter Institute, Canada
+  title: Fermions and categorified algebra closure
+  abstract:
+    - >
+      I will explain a sense in which the category \(\mathbf{Vec}_{\mathbb{C}}\) of complex vector spaces is not "algebraically closed," but rather has the category \(\mathbf{sVec}_{\mathbb{C}}\) of complex *super* vector space (\(\mathbb{Z}/2\mathbb{Z}\)-graded vector spaces with Grassmann/Koszul sign rules) as its algebraic closure.
+      From this perspective, the occurrence in quantum physics of both imaginary numbers and of fermionic particles come from the same source. In addition to particle-like excitations, quantum materials can have excitations that behave like strings or higher-dimensional branes, whose fusion and statistics is organized by higher categories. 
+      Ideas from classical Galois theory — algebraic closure, cyclotomic and Kummer extensions, etc. — allow to work out the possible statistics of these extended objects.
+      Remarkably, these purely-algebraic questions — what is the algebraic closure of the \(n\)-category of "\(n\)-vector spaces"? — have answers that look enticingly geometric, and hint at a deeper meaning of unitarity and the Spin–Statistics Theorem.
+      Time permitting, I will indicate some applications to enforced gaplessness and the classification of topological insulators.  This is joint work in progress with David Reutter.
+  image: "/assets/images/plenaries/theo-johnson-freyd.jpg"
+
+- speaker: Anita Liebenau 
+  url: "https://lieben.au/"
+  addition: Hanna Neumann lecturer
+  affiliation: UNSW Sydney
+  title: "From Graphs to Latin Rectangles: Probabilistic Methods in Asymptotic Enumeration"
+  abstract:
+    - >
+      Latin rectangles are among the oldest objects in combinatorics, yet their enumeration has resisted precise analysis.
+      Recent joint work develops asymptotics for their number, using methods that we first designed for counting regular graphs of medium density.
+      The key idea is to build a probability space where point probabilities can be evaluated with high accuracy - revealing the normalized count of Latin rectangles as one such probability.
+  image: "/assets/images/plenaries/anita-liebenau.jpg"
+
+
+
+- speaker: Yoshihiro Tonegawa
+  url: "https://sites.google.com/view/yoshihirotonegawa/home-page"
+  affiliation: Institute of Science Tokyo, Japan
+  title: Geometric measure theory and mean curvature flow
+  abstract: 
+    - >
+      The study of minimal surfaces is one of the central themes in geometric measure theory, and the insights gained from research on the minimal surfaces in particular have had an impact on a wide range of fields of geometry and analysis.
+      Mean curvature flow, which can be considered a time-evolution version of the minimal surface, is a more general problem that also includes minimal surfaces.
+      Compared to the study of minimal surfaces, on the other hand, the amount of research on the mean curvature flow is considerably smaller, and many aspects remain unclear.
+      I will begin by explaining the history of the mean curvature flow in the context of geometric measure theory and Almgren's works and then introduce the existence and regularity theorem in which I have been involved.
+  image: "/assets/images/plenaries/yoshihiro-tonegawa.jpg"
+
+
+- speaker: Caroline Wormell 
+  url: "https://www.maths.usyd.edu.au/u/caro/"
+  addition: Early career lecturer
+  affiliation: University of Sydney
+  title: Computing transfer operators and fractal dimensions
+  abstract: 
+    - >
+      Transfer operators are an interesting kind of functional operator: they are weighted composition operators, typically associated with dynamical systems.
+      One of their many applications is in studying fractals, and in particular characterising their fundamental properties like dimension.
+      I will explain the connection, and show how some recent numerical approaches to transfer operators facilitate very good rigorous bounds on Hausdorff dimensions of certain fractals of relevance to number theory.
+  image: "/assets/images/plenaries/caroline-wormell.png"
+
+
+- speaker: Oksana Yakimova
+  url: "https://www.uni-jena.de/21370/professorin-yakimova"
+  affiliation: University of Jena, Germany
+  title: Commutative subalgebras of the enveloping and symmetric algebra of a Lie algebra \(\mathfrak{q}\).
+  abstract:
+    - >
+      The enveloping algebra \(U(\mathfrak{q})\) has a filtration and by the Poincaré–Birkhoff–Witt theorem the associated graded object is the symmetric algebra \(S(\mathfrak{q})\) of \(\mathfrak{q}\).
+      The Lie–Poisson bracket \(\{\, ,\,\}\) on \(S(\mathfrak{q})\) is obtained from the commutator on \(U(\mathfrak{q})\) in a standard way.
+      A subalgebra \(C\) of \(S(\mathfrak{q})\) is Poisson-commutative if \(\{C,C\}=0\).
+      Interest in these objects originates from integrable systems and they are deeply connected to the geometry of coadjoint orbits.
+      By now, Poisson-commutative subalgebras of \(S(\mathfrak{q})\) have been investigated from different perspectives.
+    - >
+      There is a natural interplay between commutative subalgebras of \(U(\mathfrak{q})\) and Poisson-commutative subalgebras of \(S(\mathfrak{q})\), which is profitable for both settings.
+      On the symmetric algebra side, we have methods of commutative algebra and geometry.
+      On the enveloping side, there are applications in representation theory of \(\mathfrak{q}\).
+    - >
+      We discuss various constructions of (Poisson-)commutative subalgebras and present several important examples, classical, as well as more recent.
+      This includes Gelfand–Tsetlin and Mishchenko–Fomenko subalgebras, Lenard–Magri scheme related to a finite order automorphism or to a splitting of \(\mathfrak{q}\), commutative subalgebras \(C\) of \(U(\mathfrak{q})\) having the maximal transcendence degree.
+  image: "/assets/images/plenaries/oksana-yakimova.jpg"

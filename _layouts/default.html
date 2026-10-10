@@ -1,0 +1,46 @@
+{% if page.url == "/" %}
+    {% assign this_title = site.title %}
+{% else %}
+    {% assign this_title = page.title | append: " - " | append: site.title %}
+{% endif %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ this_title }}</title>
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	<meta property="og:description" content="{{ page.description }}">
+	{% endif %}
+	<meta property="og:title" content="{{ this_title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="en">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<link rel="canonical" href="{{ page.url | absolute_url }}">
+	<link rel="icon" href="data:,">
+	<link rel="stylesheet" href="{{ '/assets/css/photoswipe.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/splide.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/fontawesome/css/fontawesome.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/fontawesome/css/solid.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/fontawesome/css/regular.min.css' | relative_url }}">
+	{% if page.mathjax %}
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	{% endif %}
+</head>
+
+<body>
+
+	{% include header.html %}
+
+	<main {% if page.page_class %}class="{{ page.page_class }}"{% endif %}>
+		{{ content }}
+	</main>
+
+	{% include footer.html %}
+
+	<script src="{{ '/assets/js/splide.min.js' | relative_url }}"></script>
+	<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

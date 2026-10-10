@@ -1,0 +1,107 @@
+---
+layout: default
+title: Photos
+permalink: /photos/
+page_class: photos
+---
+
+<script type="module" src="{{ '/assets/js/photos.js' | relative_url }}"></script>
+
+<h1>AustMS 2025 photos</h1>
+<p>Photos can be clicked to enlarge.</p>
+
+<section>
+    <h2>Opening day</h2>
+
+    <div class="splide photo-carousel" aria-label="Opening day photos">
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for photo in site.data.photos.opening-day %}
+                <li class="splide__slide">
+                    <a class="photo-link"
+                       href="{{ '/assets/photos/opening-day/' | append: photo.filename | relative_url }}"
+                       data-pswp-width="{{ photo.width }}"
+                       data-pswp-height="{{ photo.height }}">
+                        <img
+                            src="{{ '/assets/photos/opening-day/' | append: photo.filename | relative_url }}"
+                            alt=""
+                            loading="lazy">
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Public lecture</h2>
+
+    <div class="splide photo-carousel" aria-label="Opening day photos">
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for photo in site.data.photos.public-lecture %}
+                <li class="splide__slide">
+                    <a class="photo-link"
+                       href="{{ '/assets/photos/public-lecture/' | append: photo.filename | relative_url }}"
+                       data-pswp-width="{{ photo.width }}"
+                       data-pswp-height="{{ photo.height }}">
+                        <img
+                            src="{{ '/assets/photos/public-lecture/' | append: photo.filename | relative_url }}"
+                            alt=""
+                            loading="lazy">
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Art exhibition</h2>
+
+    <div class="splide photo-carousel" aria-label="Opening day photos">
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for photo in site.data.photos.art-exhibition %}
+                <li class="splide__slide">
+                    <a class="photo-link"
+                       href="{{ '/assets/photos/art-exhibition/' | append: photo.filename | relative_url }}"
+                       data-pswp-width="{{ photo.width }}"
+                       data-pswp-height="{{ photo.height }}">
+                        <img
+                            src="{{ '/assets/photos/art-exhibition/' | append: photo.filename | relative_url }}"
+                            alt=""
+                            loading="lazy">
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Conference dinner</h2>
+
+    <div class="splide photo-carousel" aria-label="Opening day photos">
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for photo in site.data.photos.conference-dinner %}
+                <li class="splide__slide">
+                    <a class="photo-link"
+                       href="{{ '/assets/photos/conference-dinner/' | append: photo.filename | relative_url }}"
+                       data-pswp-width="{{ photo.width }}"
+                       data-pswp-height="{{ photo.height }}">
+                        <img
+                            src="{{ '/assets/photos/conference-dinner/' | append: photo.filename | relative_url }}"
+                            alt=""
+                            loading="lazy">
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

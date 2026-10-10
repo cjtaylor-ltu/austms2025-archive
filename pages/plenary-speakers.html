@@ -1,0 +1,24 @@
+---
+layout: default
+title: Plenary speakers
+permalink: /plenary-speakers/
+page_class: plenary-speakers small-h1
+mathjax: true
+---
+{% for plenary in site.data.plenaries %}
+<section class="plenary">
+    <div class="grey-box">
+		<h1><a href="{{ plenary.url }}" target="_blank">{{ plenary.speaker }}</a>{% if plenary.addition %} | {{ plenary.addition }}{% endif %}</h1>
+		<p>{{ plenary.affiliation }}</p>
+        <h2>{{ plenary.title }}</h2>
+		{% for paragraph in plenary.abstract %}
+		<p class="abstract">{{ paragraph }}</p>
+		{% endfor %}
+    </div>
+
+	<img class="plenary-photo"
+     src="{{ plenary.image | relative_url }}"
+     alt="{{ plenary.speaker }}"
+     {% if plenary.image_position %}style="object-position: {{ plenary.image_position }};"{% endif %}>
+</section>
+{% endfor %}

@@ -1,0 +1,100 @@
+---
+layout: default
+title: Events
+permalink: /events/
+page_class: events content-list
+mathjax: true
+---
+
+<section>
+	<h1>Public lecture</h1>
+	<div class="info-split">
+		<div class="grey-box public-lecture">
+			<h2>Why Your Calculator Is (Slightly) Lying to You—And Why That's OK</h2>
+			<h3>Presented by Tobin Driscoll</h3>
+			<p>We trust computers to follow the rules of arithmetic. But even expensive scientific software can fail to uphold the basic principle \((a+b)+c = a + (b+c)\). This is not a glitch—it's a clue to a deep tension between the perfect world of mathematics and the practical world of computation. In this talk, we'll take a journey through the numbers we think we know—from whole numbers to fractions, and onward to the supposedly "imaginary" number \(\sqrt{-1}\). While these abstract ideas have become indispensable tools, their digital simulations are full of surprising compromises. The climax of our journey will be a mathematical mystery: a simple approximation that fails because of an invisible barrier that lurks in the imaginary direction. This surprising connection is spurring advances in the practical challenge of representing mathematical functions on computers. I will show how both new and old ideas continue to drive new breakthroughs, making these methods faster and more powerful than ever before.</p>
+		</div>
+		<div class="info-section">
+			<div class="info-box">
+				<div class="info-box-icon"><i class="fa-solid fa-location-dot"></i></div>
+				<div class="pars">
+					<p>Agora Theatre</p>
+					<p>La Trobe University, Bundoora campus</p>
+				</div>
+			</div>
+			<div class="info-box">
+				<div class="info-box-icon"><i class="fa-solid fa-calendar-day"></i></div>
+				<div class="pars">
+					<p>Wednesday December 10</p>
+					<p>18:00–19:00</p>
+				</div>
+			</div>
+			<div class="info-box">
+				<div class="info-box-icon"><i class="fa-solid fa-utensils"></i></div>
+				<div class="pars">
+					<p>Refreshments at Agora East, level 2</p>
+					<p>17:30–18:00</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<h1>Conference dinner</h1>
+	<div class="info-split">
+		<div class="grey-box conference-dinner">
+			<h2><strong>Hosted at <a href="https://leondabytheyarra.com.au/">Leonda by the Yarra</strong></a></h2>
+			<p>Drinks to be served from 18:30.</p>
+			<p>Food to be served from 19:00.</p>
+			<p>Buses will depart between 17:30 and 17:45 from Car Park 2. Please meet at the Registration and Information Desk to walk together to the departure location.</p>
+		</div>
+		<div class="info-section">
+			<div class="info-box">
+				<div class="info-box-icon"><i class="fa-solid fa-location-dot"></i></div>
+				<div class="pars">
+					<p>Leonda by the Yarra</p>
+				</div>
+			</div>
+			<div class="info-box">
+				<div class="info-box-icon"><i class="fa-solid fa-calendar-day"></i></div>
+				<div class="pars">
+					<p>Thursday December 11</p>
+					<p>18:30–</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<h1>Other events</h1>
+	{% for event in site.data.events %}
+	<div class="info-split">
+		<div class="grey-box">
+			<h2>{{ event.title }}</h2>
+			{% if event.subtitle %}<h3>{{ event.subtitle }}</h3>{% endif %}
+		</div>
+		<div class="info-section">
+			<div class="info-box">
+				<div class="info-box-icon"><i class="fa-solid fa-location-dot"></i></div>
+				<div class="pars">
+					{% for line in event.location %}
+					<p>{{ line }}</p>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="info-box">
+				<div class="info-box-icon"><i class="fa-solid fa-calendar-day"></i></div>
+				<div class="pars">
+					{% for line in event.time %}
+					<p>{{ line }}</p>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% endfor %}
+
+</section>

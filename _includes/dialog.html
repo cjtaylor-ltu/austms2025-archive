@@ -1,0 +1,12 @@
+<dialog id="{{ include.id }}" class="overlay">
+    <div class="overlay-content">
+        <button class="overlay-close"
+                type="button"
+				aria-label="Close"
+                data-dialog-close>×</button>
+
+        <h2>{{ include.title }}</h2>
+
+        {{ include.content }}
+    </div>
+</dialog>

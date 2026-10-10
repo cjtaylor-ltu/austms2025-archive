@@ -1,0 +1,38 @@
+<header class="branding">
+	<svg class="branding-wave"
+		 viewBox="0 0 1000 100"
+		 preserveAspectRatio="none"
+		 aria-hidden="true">
+		<path d="M 0 50 C 250 85, 850 5, 1000 20 L 1000 100 L 0 100 Z"/>
+	</svg>
+	<a class="logo-link" href="https://austms.org.au">
+		<div class="austms-logo">
+			<img src="{{ '/assets/images/austms-logo.png' | relative_url }}" alt="Australian Mathematical Society" width="195">
+		</div>
+	</a>
+
+	<span>AustMS Meeting 2025</span>
+
+	<a class="logo-link" href="https://www.latrobe.edu.au/">
+		<img src="{{ '/assets/images/ltu-logo.png' | relative_url }}" alt="La Trobe University" height="79">
+	</a>
+
+</header>
+
+<nav class="main-nav">
+	<ul>
+		{% for item in site.data.navigation %}{% if item.children %}<li class="nav-dropdown">
+			<button type="button" class="nav-dropdown-button" aria-expanded="false">
+				{{ item.title }}
+			</button>
+			<ul class="nav-dropdown-menu">
+			{% for child in item.children %}
+				<li{% if page.url == child.url %} class="current"{% endif %}><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+			{% endfor %}
+			</ul>
+		</li>
+		{% else %}<li{% if page.url == item.url %} class="current"{% endif %}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</nav>

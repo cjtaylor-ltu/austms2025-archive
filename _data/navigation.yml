@@ -1,0 +1,32 @@
+- title: Home
+  url: /
+
+- title: Schedule
+  url: /schedule/
+
+- title: Plenary speakers
+  url: /plenary-speakers/
+
+- title: Sessions
+  url: /sessions/
+
+- title: Local information
+  url: /local-information/
+
+- title: Art exhibition
+  url: /art-exhibition/
+
+- title: Conference information
+  children:
+    - title: Registration
+      url: /registration/
+    - title: Announcements
+      url: /announcements/
+    - title: Contacts
+      url: /contacts/
+    - title: Committees
+      url: /committees/
+    - title: Events
+      url: /events/
+    - title: Satellite conferences
+      url: /satellites/

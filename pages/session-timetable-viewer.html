@@ -1,0 +1,816 @@
+---
+layout: default
+title: Session timetable viewer
+permalink: /session-timetable-viewer/
+page_class: session-timetable-viewer
+mathjax: true
+---
+<section>
+	<h1>Session timetable viewer</h1>
+	<nav class="link-buttons" aria-label="Conference resources">
+		<a href="{{ '/schedule' | relative_url }}" class="action-button link-button"><i class="fa-solid fa-rectangle-list"></i> Schedule overview</a>
+	</nav>
+	<h2>Timetable by session</h2>
+	<label for="session-select">Select a session to view the timetable for that session.</label>
+	<select id="session-select">
+		<option value="">
+		-- Select a session --
+		</option>
+		<option value="Al_Comb">
+		Algebra and Combinatorics
+		</option>
+		<option value="App_Ind">
+		Applied and Industrial Mathematics
+		</option>
+		<option value="Categ">
+		Category Theory, Homotopy Theory, and K-Theory
+		</option>
+		<option value="Comp_Math">
+		Computational Mathematics
+		</option>
+		<option value="Geom_Sym">
+		Differential Geometry and Symmetry
+		</option>
+		<option value="Dyn_Erg">
+		Dynamical Systems and Ergodic Theory
+		</option>
+		<option value="EDI">
+		Equity, Diversity and Inclusion
+		</option>
+		<option value="Fin_Math">
+		Financial Mathematics
+		</option>
+		<option value="Contrib">
+		General Session
+		</option>
+		<option value="Groups">
+		Groups, Actions and Computation
+		</option>
+		<option value="Harm_An">
+		Harmonic Analysis and Hamiltonian PDE
+		</option>
+		<option value="Mech_WT">
+		Mathematical Methods in Continuum Mechanics and Wave Theory
+		</option>
+		<option value="Math_Phys">
+		Mathematical Physics
+		</option>
+		<option value="Math_Edu">
+		Mathematics Education
+		</option>
+		<option value="NL_PDE">
+		Nonlinear PDEs and their applications
+		</option>
+		<option value="Num_Th">
+		Number Theory
+		</option>
+		<option value="Opt">
+		Optimisation
+		</option>
+		<option value="Poster">
+		Poster session
+		</option>
+		<option value="Prob_Stat">
+		Probability and Mathematical Statistics
+		</option>
+		<option value="Rep">
+		Representation Theory
+		</option>
+		<option value="SDE">
+		Stochastic Differential Equations
+		</option>
+		<option value="Top">
+		Topology
+		</option>
+		<option value="Visual">
+		Visualisation, Mathematical Art, Engagement and Outreach
+		</option>
+	</select> 
+
+	<script>
+		document.getElementById("session-select").addEventListener("change", function() {
+			const selected = this.value;
+			document.querySelectorAll(".session-display").forEach(display => {
+				display.hidden = display.id !== selected;
+			});
+		});
+	</script>
+
+	{% include session-timetable-list.html %}
+
+	<p>Detailed abstracts are available in the <a href="{{ '/assets/files/AustMS2025 conference booklet.pdf' | relative_url }}">conference booklet</a>.</p>
+
+</section>
+
+<section>
+	<h2>Timetable by day</h2>
+
+	<div class="session-tab-bar">
+		<button type="button" class="session-tab active" data-target="day1" aria-controls="day1">
+			Tue Dec 9
+		</button>
+		<button type="button" class="session-tab" data-target="day2" aria-controls="day2">
+			Wed Dec 10
+		</button>
+		<button type="button" class="session-tab" data-target="day3" aria-controls="day3">
+			Thu Dec 11
+		</button>
+		<button type="button" class="session-tab" data-target="day4" aria-controls="day4">
+			Fri Dec 12
+		</button>
+	</div>
+	<div id="day1" class="session-tab-pane scroll-wrap">
+		<h3>Tuesday 13:30–15:30</h3>
+		<table class="schedule-table day-table">
+			<thead>
+				<tr>
+					<th>Session</th>
+					<th>Time</th>
+					<th>Room</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Algebra and Combinatorics</td>
+					<td>13:30–15:00</td>
+					<td>TLC-314</td>
+				</tr>
+				<tr>
+					<td>Category Theory, Homotopy Theory, and K-Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-412</td>
+				</tr>
+				<tr>
+					<td>Computational Mathematics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-417</td>
+				</tr>
+				<tr>
+					<td>Differential Geometry and Symmetry</td>
+					<td>13:30–15:30</td>
+					<td>TLC-313</td>
+				</tr>
+				<tr>
+					<td>Dynamical Systems and Ergodic Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-415</td>
+				</tr>
+				<tr>
+					<td>Equity, Diversity and Inclusion</td>
+					<td>14:00–15:30</td>
+					<td>TLC-216</td>
+				</tr>
+				<tr>
+					<td>Financial Mathematics</td>
+					<td>14:00–15:30</td>
+					<td>TLC-215</td>
+				</tr>
+				<tr>
+					<td>Groups, Actions and Computation</td>
+					<td>13:30–15:30</td>
+					<td>TLC-317</td>
+				</tr>
+				<tr>
+					<td>Harmonic Analysis and Hamiltonian PDE</td>
+					<td>13:30–15:30</td>
+					<td>TLC-414</td>
+				</tr>
+				<tr>
+					<td>Mathematical Physics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-115</td>
+				</tr>
+				<tr>
+					<td>Nonlinear PDEs and their applications</td>
+					<td>13:30–15:30</td>
+					<td>TLC-416</td>
+				</tr>
+				<tr>
+					<td>Number Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-214</td>
+				</tr>
+				<tr>
+					<td>Optimisation</td>
+					<td>13:30–15:30</td>
+					<td>TLC-311</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Probability and Mathematical Statistics (parallel sessions)</td>
+					<td>14:00–15:30</td>
+					<td>TLC-212</td>
+				</tr>
+				<tr>
+					<td>13:30–15:30</td>
+					<td>TLC-413</td>
+				</tr>
+				<tr>
+					<td>Representation Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-312</td>
+				</tr>
+				<tr>
+					<td>Stochastic Differential Equations</td>
+					<td>14:00–15:30</td>
+					<td>PS2-330</td>
+				</tr>
+				<tr>
+					<td>Topology</td>
+					<td>13:30–15:30</td>
+					<td>TLC-315</td>
+				</tr>
+				<tr>
+					<td>Visualisation, Mathematical Art, Engagement and Outreach</td>
+					<td>14:00–15:30</td>
+					<td>PS2-212</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Tuesday 16:00–17:30</h3>
+		<table class="schedule-table day-table">
+			<thead>
+				<tr>
+					<th>Session</th>
+					<th>Time</th>
+					<th>Room</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Algebra and Combinatorics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-314</td>
+				</tr>
+				<tr>
+					<td>Category Theory, Homotopy Theory, and K-Theory</td>
+					<td>16:00–17:30</td>
+					<td>TLC-412</td>
+				</tr>
+				<tr>
+					<td>Computational Mathematics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-417</td>
+				</tr>
+				<tr>
+					<td>Differential Geometry and Symmetry</td>
+					<td>16:00–17:30</td>
+					<td>TLC-313</td>
+				</tr>
+				<tr>
+					<td>Financial Mathematics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-215</td>
+				</tr>
+				<tr>
+					<td>General Session</td>
+					<td>16:00–17:30</td>
+					<td>TLC-317</td>
+				</tr>
+				<tr>
+					<td>Harmonic Analysis and Hamiltonian PDE</td>
+					<td>16:00–17:30</td>
+					<td>TLC-414</td>
+				</tr>
+				<tr>
+					<td>Mathematical Methods in Continuum Mechanics and Wave Theory</td>
+					<td>16:00–17:30</td>
+					<td>TLC-216</td>
+				</tr>
+				<tr>
+					<td>Mathematical Physics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-115</td>
+				</tr>
+				<tr>
+					<td>Nonlinear PDEs and their applications</td>
+					<td>16:00–17:30</td>
+					<td>TLC-416</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Number Theory (parallel sessions)</td>
+					<td rowspan="2">16:00–17:30</td>
+					<td>TLC-212</td>
+				</tr>
+				<tr>
+					<td>TLC-214</td>
+				</tr>
+				<tr>
+					<td>Optimisation</td>
+					<td>16:00–17:30</td>
+					<td>TLC-311</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Probability and Mathematical Statistics (parallel sessions)</td>
+					<td rowspan="2">16:00–17:30</td>
+					<td>TLC-413</td>
+				</tr>
+				<tr>
+					<td>TLC-415</td>
+				</tr>
+				<tr>
+					<td>Representation Theory</td>
+					<td>16:00–17:30</td>
+					<td>TLC-312</td>
+				</tr>
+				<tr>
+					<td>Stochastic Differential Equations</td>
+					<td>16:00–17:30</td>
+					<td>PS2-330</td>
+				</tr>
+				<tr>
+					<td>Topology</td>
+					<td>16:00–17:30</td>
+					<td>TLC-315</td>
+				</tr>
+				<tr>
+					<td>Visualisation, Mathematical Art, Engagement and Outreach</td>
+					<td>16:00–17:30</td>
+					<td>PS2-212</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="day2" class="session-tab-pane scroll-wrap" hidden>
+		<h3>Wednesday 14:00–15:30</h3>
+		<table class="schedule-table day-table">
+			<thead>
+				<tr>
+					<th>Session</th>
+					<th>Time</th>
+					<th>Room</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Algebra and Combinatorics</td>
+					<td>14:00–15:30</td>
+					<td>TLC-314</td>
+				</tr>
+				<tr>
+					<td>Applied and Industrial Mathematics</td>
+					<td>14:00–15:30</td>
+					<td>TLC-216</td>
+				</tr>
+				<tr>
+					<td>Computational Mathematics</td>
+					<td>14:00–15:30</td>
+					<td>TLC-417</td>
+				</tr>
+				<tr>
+					<td>Differential Geometry and Symmetry</td>
+					<td>14:00–15:30</td>
+					<td>TLC-313</td>
+				</tr>
+				<tr>
+					<td>Financial Mathematics</td>
+					<td>14:00–15:30</td>
+					<td>TLC-215</td>
+				</tr>
+				<tr>
+					<td>Groups, Actions and Computation</td>
+					<td>14:00–15:30</td>
+					<td>TLC-414</td>
+				</tr>
+				<tr>
+					<td>Harmonic Analysis and Hamiltonian PDE</td>
+					<td>14:00–15:30</td>
+					<td>TLC-412</td>
+				</tr>
+				<tr>
+					<td>Mathematical Methods in Continuum Mechanics and Wave Theory</td>
+					<td>14:00–15:30</td>
+					<td>PS2-212</td>
+				</tr>
+				<tr>
+					<td>Nonlinear PDEs and their applications</td>
+					<td>14:00–15:30</td>
+					<td>TLC-416</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Number Theory (parallel sessions)</td>
+					<td rowspan="2">14:00–15:30</td>
+					<td>TLC-214</td>
+				</tr>
+				<tr>
+					<td>TLC-317</td>
+				</tr>
+				<tr>
+					<td>Optimisation</td>
+					<td>14:00–15:30</td>
+					<td>TLC-311</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Probability and Mathematical Statistics (parallel sessions)</td>
+					<td rowspan="2">14:00–15:30</td>
+					<td>TLC-413</td>
+				</tr>
+				<tr>
+					<td>TLC-415</td>
+				</tr>
+				<tr>
+					<td>Representation Theory</td>
+					<td>14:00–15:30</td>
+					<td>TLC-312</td>
+				</tr>
+				<tr>
+					<td>Stochastic Differential Equations</td>
+					<td>14:00–15:30</td>
+					<td>PS2-330</td>
+				</tr>
+				<tr>
+					<td>Topology</td>
+					<td>14:00–15:30</td>
+					<td>TLC-212</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Wednesday 16:00–17:30</h3>
+		<table class="schedule-table day-table">
+			<thead>
+				<tr>
+					<th>Session</th>
+					<th>Time</th>
+					<th>Room</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Algebra and Combinatorics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-314</td>
+				</tr>
+				<tr>
+					<td>Applied and Industrial Mathematics</td>
+					<td>16:00–17:00</td>
+					<td>TLC-216</td>
+				</tr>
+				<tr>
+					<td>Computational Mathematics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-417</td>
+				</tr>
+				<tr>
+					<td>Differential Geometry and Symmetry</td>
+					<td>16:00–17:30</td>
+					<td>TLC-313</td>
+				</tr>
+				<tr>
+					<td>Financial Mathematics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-215</td>
+				</tr>
+				<tr>
+					<td>General Session</td>
+					<td>16:00–17:30</td>
+					<td>TLC-317</td>
+				</tr>
+				<tr>
+					<td>Groups, Actions and Computation</td>
+					<td>16:00–17:30</td>
+					<td>TLC-414</td>
+				</tr>
+				<tr>
+					<td>Harmonic Analysis and Hamiltonian PDE</td>
+					<td>16:00–17:30</td>
+					<td>TLC-412</td>
+				</tr>
+				<tr>
+					<td>Mathematical Physics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-115</td>
+				</tr>
+				<tr>
+					<td>Nonlinear PDEs and their applications</td>
+					<td>16:00–17:30</td>
+					<td>TLC-416</td>
+				</tr>
+				<tr>
+					<td>Number Theory</td>
+					<td>16:00–17:30</td>
+					<td>TLC-214</td>
+				</tr>
+				<tr>
+					<td>Optimisation</td>
+					<td>16:00–17:30</td>
+					<td>TLC-311</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Probability and Mathematical Statistics (parallel sessions)</td>
+					<td rowspan="2">16:00–17:30</td>
+					<td>TLC-413</td>
+				</tr>
+				<tr>
+					<td>TLC-415</td>
+				</tr>
+				<tr>
+					<td>Representation Theory</td>
+					<td>16:00–17:30</td>
+					<td>TLC-312</td>
+				</tr>
+				<tr>
+					<td>Stochastic Differential Equations</td>
+					<td>16:00–17:30</td>
+					<td>PS2-330</td>
+				</tr>
+				<tr>
+					<td>Topology</td>
+					<td>16:00–17:30</td>
+					<td>TLC-212</td>
+				</tr>
+				<tr>
+					<td>Visualisation, Mathematical Art, Engagement and Outreach</td>
+					<td>16:00–17:30</td>
+					<td>PS2-212</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="day3" class="session-tab-pane scroll-wrap" hidden>
+		<h3>Thursday 13:30–15:30</h3>
+		<table class="schedule-table day-table">
+			<thead>
+				<tr>
+					<th>Session</th>
+					<th>Time</th>
+					<th>Room</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Algebra and Combinatorics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-314</td>
+				</tr>
+				<tr>
+					<td>Applied and Industrial Mathematics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-216</td>
+				</tr>
+				<tr>
+					<td>Category Theory, Homotopy Theory, and K-Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-412</td>
+				</tr>
+				<tr>
+					<td>Computational Mathematics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-417</td>
+				</tr>
+				<tr>
+					<td>Differential Geometry and Symmetry</td>
+					<td>13:30–15:30</td>
+					<td>TLC-313</td>
+				</tr>
+				<tr>
+					<td>Dynamical Systems and Ergodic Theory</td>
+					<td>14:00–15:30</td>
+					<td>TLC-212</td>
+				</tr>
+				<tr>
+					<td>Financial Mathematics</td>
+					<td>14:00–15:30</td>
+					<td>TLC-215</td>
+				</tr>
+				<tr>
+					<td>Groups, Actions and Computation</td>
+					<td>13:30–15:30</td>
+					<td>TLC-414</td>
+				</tr>
+				<tr>
+					<td>Mathematical Physics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-115</td>
+				</tr>
+				<tr>
+					<td>Mathematics Education</td>
+					<td>13:30–15:30</td>
+					<td>PS2-212</td>
+				</tr>
+				<tr>
+					<td>Nonlinear PDEs and their applications</td>
+					<td>13:30–15:30</td>
+					<td>TLC-416</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Number Theory (parallel sessions)</td>
+					<td rowspan="2">13:30–15:30</td>
+					<td>TLC-214</td>
+				</tr>
+				<tr>
+					<td>TLC-317</td>
+				</tr>
+				<tr>
+					<td>Optimisation</td>
+					<td>13:30–15:30</td>
+					<td>TLC-311</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Probability and Mathematical Statistics (parallel sessions)</td>
+					<td rowspan="2">13:30–15:30</td>
+					<td>TLC-413</td>
+				</tr>
+				<tr>
+					<td>TLC-415</td>
+				</tr>
+				<tr>
+					<td>Representation Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-312</td>
+				</tr>
+				<tr>
+					<td>Stochastic Differential Equations</td>
+					<td>13:30–15:30</td>
+					<td>PS2-330</td>
+				</tr>
+				<tr>
+					<td>Topology</td>
+					<td>13:30–15:30</td>
+					<td>TLC-315</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>There are no special sessions after 15:30 on Thursday.</p>
+	</div>
+	<div id="day4" class="session-tab-pane scroll-wrap" hidden>
+		<h3>Friday 13:30–15:30</h3>
+		<table class="schedule-table day-table">
+			<thead>
+				<tr>
+					<th>Session</th>
+					<th>Time</th>
+					<th>Room</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Algebra and Combinatorics</td>
+					<td>14:00–15:30</td>
+					<td>TLC-314</td>
+				</tr>
+				<tr>
+					<td>Category Theory, Homotopy Theory, and K-Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-412</td>
+				</tr>
+				<tr>
+					<td>Computational Mathematics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-417</td>
+				</tr>
+				<tr>
+					<td>Differential Geometry and Symmetry</td>
+					<td>13:30–15:30</td>
+					<td>TLC-313</td>
+				</tr>
+				<tr>
+					<td>Dynamical Systems and Ergodic Theory</td>
+					<td>13:30–15:00</td>
+					<td>TLC-212</td>
+				</tr>
+				<tr>
+					<td>Equity, Diversity and Inclusion</td>
+					<td>14:30–15:30</td>
+					<td>TLC-414</td>
+				</tr>
+				<tr>
+					<td>General Session</td>
+					<td>13:30–14:30</td>
+					<td>TLC-414</td>
+				</tr>
+				<tr>
+					<td>Mathematical Methods in Continuum Mechanics and Wave Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-216</td>
+				</tr>
+				<tr>
+					<td>Mathematical Physics</td>
+					<td>13:30–15:30</td>
+					<td>TLC-115</td>
+				</tr>
+				<tr>
+					<td>Mathematics Education</td>
+					<td>13:30–15:30</td>
+					<td>PS2-212</td>
+				</tr>
+				<tr>
+					<td>Nonlinear PDEs and their applications</td>
+					<td>13:30–15:30</td>
+					<td>TLC-416</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Number Theory (parallel sessions)</td>
+					<td>13:30–15:00</td>
+					<td>TLC-214</td>
+				</tr>
+				<tr>
+					<td>13:30–14:30</td>
+					<td>TLC-215</td>
+				</tr>
+				<tr>
+					<td>Optimisation</td>
+					<td>13:30–15:30</td>
+					<td>TLC-311</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Probability and Mathematical Statistics (parallel sessions)</td>
+					<td rowspan="2">13:30–15:30</td>
+					<td>TLC-413</td>
+				</tr>
+				<tr>
+					<td>TLC-415</td>
+				</tr>
+				<tr>
+					<td>Representation Theory</td>
+					<td>13:30–15:30</td>
+					<td>TLC-312</td>
+				</tr>
+				<tr>
+					<td>Stochastic Differential Equations</td>
+					<td>13:30–15:00</td>
+					<td>PS2-330</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Topology (parallel sessions)</td>
+					<td>13:30–15:30</td>
+					<td>TLC-315</td>
+				</tr>
+				<tr>
+					<td>14:30–15:30</td>
+					<td>TLC-317</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Friday 16:00–17:30</h3>
+		<table class="schedule-table day-table">
+			<thead>
+				<tr>
+					<th>Session</th>
+					<th>Time</th>
+					<th>Room</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Algebra and Combinatorics</td>
+					<td>16:00–17:30</td>
+					<td>TLC-314</td>
+				</tr>
+				<tr>
+					<td>Harmonic Analysis and Hamiltonian PDE</td>
+					<td>16:00–17:30</td>
+					<td>TLC-412</td>
+				</tr>
+				<tr>
+					<td>Mathematical Methods in Continuum Mechanics and Wave Theory</td>
+					<td>16:00–16:30</td>
+					<td>TLC-216</td>
+				</tr>
+				<tr>
+					<td>Mathematical Physics</td>
+					<td>16:00–17:00</td>
+					<td>TLC-115</td>
+				</tr>
+				<tr>
+					<td>Nonlinear PDEs and their applications</td>
+					<td>16:00–16:30</td>
+					<td>TLC-416</td>
+				</tr>
+				<tr>
+					<td>Optimisation</td>
+					<td>16:00–17:30</td>
+					<td>TLC-311</td>
+				</tr>
+				<tr>
+					<td>Representation Theory</td>
+					<td>16:00–17:00</td>
+					<td>TLC-312</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Topology (parallel sessions)</td>
+					<td>16:00–17:30</td>
+					<td>TLC-315</td>
+				</tr>
+				<tr>
+					<td>16:00–16:30</td>
+					<td>TLC-317</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script>
+		document.querySelectorAll(".session-tab").forEach(session_tab => {
+			session_tab.addEventListener("click", () => {
+				const target = session_tab.dataset.target;
+
+				document.querySelectorAll(".session-tab-pane").forEach(pane => {
+					pane.hidden = pane.id !== target;
+				});
+
+				document.querySelectorAll(".session-tab").forEach(t => {
+					t.classList.remove("active");
+				});
+				session_tab.classList.add("active");
+			});
+		});
+	</script>
+</section>
