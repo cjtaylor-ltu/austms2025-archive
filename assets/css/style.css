@@ -161,6 +161,11 @@ main > section {
 	font-size: 50px;
 }
 
+.branding a {
+	color: white;
+    text-decoration: none;
+}
+
 .branding img {
     display: block;
 }
